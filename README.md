@@ -56,7 +56,7 @@ The physical prototype integrates sensing, processing, and communication modules
 
 The circuit diagram shows the interconnection between the Raspberry Pi, ultrasonic sensors, camera module, GPS, GSM module, and power supply.
 
-![Circuit Diagram](hardware/circuitdiagram.png)
+![Circuit Diagram](hardware/circuitdiagram.jpg)
 
 ---
 
