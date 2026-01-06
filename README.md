@@ -7,87 +7,105 @@ Batch: 2024
 
 📌 Project Overview
 
-With over 284 million people globally affected by visual impairment, independent navigation remains a critical challenge. Most existing assistive technologies lack real-time intelligence, environment awareness, and integrated safety features, leaving visually impaired individuals vulnerable in dynamic environments.
+Over 284 million people worldwide live with visual impairments, facing daily challenges in independent navigation and personal safety. While several assistive tools exist, many lack real-time intelligence, environment awareness, and integrated safety mechanisms.
 
-BlindAssist is a hardware–software integrated assistive system that combines machine learning–based object recognition, GPS-based navigation, and real-time speech feedback to enhance mobility, safety, and independence for visually impaired users.
+BlindAssist is a hardware–software integrated smart assistive system designed to enhance mobility and safety for visually impaired individuals. By combining machine learning–based object recognition, ultrasonic obstacle detection, GPS navigation, and speech feedback, the system provides real-time guidance and emergency support through a smart stick interface.
 
 ❗ Problem Statement
 
-Existing assistive technologies for visually impaired individuals often fail to provide real-time assistance and comprehensive functionality, limiting their effectiveness in dynamic environments.
-This lack of intelligent feedback and navigation support increases the risk of accidents and dependency.
+Existing assistive technologies for visually impaired individuals often lack real-time assistance and comprehensive functionality, leaving users vulnerable in dynamic environments. The absence of intelligent obstacle detection, object recognition, and navigation support increases dependency and safety risks.
 
-The BlindAssist project addresses this gap by integrating machine learning, GPS tracking, and speech feedback into a single smart system. The goal is to empower visually impaired individuals, improve accessibility, and promote inclusivity through intelligent and affordable assistive technology.
+The BlindAssist project addresses these challenges by integrating machine learning, GPS tracking, and speech feedback into a single intelligent system. The aim is to empower visually impaired individuals, bridge accessibility gaps, and foster inclusivity through innovative assistive technology.
 
 💡 Solution Overview
 
-BlindAssist operates as a smart assistive stick that continuously senses the surrounding environment and provides audio-based guidance to the user.
+BlindAssist functions as a smart assistive stick that continuously monitors the surrounding environment and provides audio-based guidance to the user.
 
-Core Features
+Key Features
 
-Real-Time Obstacle Detection using ultrasonic sensors
+🔍 Real-time obstacle detection using ultrasonic sensors
 
-Machine Learning–Based Object Recognition via a camera module
+🧠 Machine learning–based object recognition via camera input
 
-GPS-Based Navigation Assistance for location awareness
+🗺️ GPS-based navigation and location tracking
 
-Speech Feedback System for hands-free interaction
+🔊 Speech feedback system for hands-free interaction
 
-Emergency Alert Mechanism to notify caregivers or emergency contacts
+🚨 Emergency alert mechanism using GSM communication
+
+🏗️ System Architecture & Workflow
+
+The following diagram illustrates the complete workflow of the BlindAssist system, including user interaction, sensor processing, object recognition, navigation assistance, and emergency alert handling.
+
+![System Architecture and Workflow](diagrams/dfd.png)
+
+🦯 Hardware Prototype (Smart Assistive Stick)
+
+The physical prototype integrates sensing, processing, and communication modules into a compact smart stick suitable for real-world usage.
+
+![BlindAssist Hardware Prototype](hardware/stick.jpg)
+
+🔌 Circuit Design & Module Connections
+
+The circuit diagram shows the interconnection between the Raspberry Pi, ultrasonic sensors, camera module, GPS, GSM module, and power supply.
+
+![Circuit Diagram](hardware/circuit_diagram.png)
+
+🧩 Hardware Components
+
+Raspberry Pi 4 Model B – Central processing and control unit
+
+Ultrasonic Sensors (HC-SR04) – Obstacle detection
+
+Raspberry Pi Camera Module v2 – Image capture for object recognition
+
+GPS Neo-6M Module – Real-time location tracking
+
+GSM SIM900A Module – Emergency alert communication
+
+Li-Po Battery & LM7805 Voltage Regulator – Stable power supply
+
+Push Buttons – Emergency triggering and user interaction
+
+💻 Software Tools & Libraries
+
+Python – Primary programming language
+
+RPi.GPIO – GPIO pin interfacing
+
+OpenCV – Image processing and object recognition
+
+TensorFlow Lite – Lightweight ML inference on Raspberry Pi
+
+Picamera2 – Camera interface for image capture
+
+pyttsx3 – Text-to-speech conversion
+
+pySerial – Communication with GPS and GSM modules
 
 ⚙️ System Evaluation & Results
 
-The system was rigorously tested to validate its effectiveness across core functionalities.
+The solution was rigorously tested to evaluate its effectiveness across core functionalities.
 
-🔍 Evaluation Results
+🔍 Performance Summary
 
-Obstacle Detection
-Ultrasonic sensors achieved high accuracy with an error margin of ±1 cm, ensuring reliable real-time obstacle alerts.
+Obstacle Detection:
+Ultrasonic sensors achieved high accuracy with an error margin of ±1 cm, ensuring reliable real-time alerts.
 
-Object Recognition
-The machine learning model achieved an average recognition accuracy of 92%, enabling effective identification and avoidance of obstacles.
+Object Recognition:
+The machine learning model achieved an average accuracy of 92%, enabling effective identification and avoidance of obstacles.
 
-Navigation Assistance
-The GPS module provided accurate location tracking within a 3-meter radius, supporting dependable wayfinding and route guidance.
+Navigation Assistance:
+GPS module provided accurate location tracking within a 3-meter radius, supporting dependable wayfinding.
 
-Emergency Alerts
-The GSM module successfully transmitted emergency alerts within 8 seconds, ensuring rapid notification to caregivers or emergency services.
+Emergency Alerts:
+GSM module successfully transmitted emergency alerts within 8 seconds, ensuring timely notification to caregivers or emergency contacts.
 
-These results demonstrate that BlindAssist effectively enhances navigation safety and situational awareness for visually impaired individuals.
-
-🧠 Technologies Used
-Hardware
-
-Smart Assistive Stick
-
-Ultrasonic Sensors
-
-Camera Module
-
-GPS Module
-
-GSM Module
-
-Microcontroller / Embedded Platform
-
-Audio Output (Speaker / Headphones)
-
-Software & Tools
-
-Machine Learning (Object Recognition Model)
-
-Embedded Programming
-
-Computer Vision
-
-Text-to-Speech (TTS)
-
-GPS & Communication Protocols
-
-(Detailed specifications available in project documentation)
+These results confirm that BlindAssist significantly enhances navigation safety and situational awareness for visually impaired users.
 
 📁 Project Documentation
 
-The following documents are available in the repository:
+Detailed project documents are available in the /docs directory:
 
 📄 Software Requirements Specification (SRS)
 
@@ -97,20 +115,18 @@ The following documents are available in the repository:
 
 📄 Complete Technical Documentation
 
-Refer to the /docs folder for full details.
-
 🚀 Future Enhancements
 
-Integration of deep learning models for improved object classification
+Integration of advanced deep learning models for improved object classification
 
-Cloud-based location monitoring for caregivers
+Mobile application for caregiver monitoring
 
-Mobile application integration
+Cloud-based location tracking and analytics
 
-Lightweight and energy-efficient hardware optimization
+Hardware miniaturization and power optimization
 
-Support for multiple languages in speech feedback
+Multilingual speech feedback support
 
 🤝 Conclusion
 
-BlindAssist successfully demonstrates how machine learning and embedded systems can be leveraged to create meaningful, real-world assistive technology. The project contributes toward improving independence, safety, and quality of life for visually impaired individuals.
+BlindAssist demonstrates the effective application of machine learning, embedded systems, and assistive technology to solve a real-world accessibility problem. The project highlights how intelligent systems can improve independence, safety, and quality of life for visually impaired individuals.
