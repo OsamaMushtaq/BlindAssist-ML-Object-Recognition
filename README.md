@@ -40,7 +40,7 @@ BlindAssist functions as a **smart assistive stick** that continuously monitors 
 
 The following diagram illustrates the complete workflow of the BlindAssist system, including user interaction, sensor processing, object recognition, navigation assistance, and emergency alert handling.
 
-![System Architecture and Workflow](diagrams/dfd.png)
+![System Architecture and Workflow](hardware/dfd.png)
 
 ---
 
@@ -56,7 +56,7 @@ The physical prototype integrates sensing, processing, and communication modules
 
 The circuit diagram shows the interconnection between the Raspberry Pi, ultrasonic sensors, camera module, GPS, GSM module, and power supply.
 
-![Circuit Diagram](hardware/circuit diagram.png)
+![Circuit Diagram](hardware/circuitdiagram.png)
 
 ---
 
