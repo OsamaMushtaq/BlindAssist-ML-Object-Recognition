@@ -39,13 +39,13 @@ The following diagram illustrates the complete workflow of the BlindAssist syste
 
 ![System Architecture and Workflow](diagrams/dfd.png)
 
-🦯 Hardware Prototype (Smart Assistive Stick)
+🦯 Hardware Prototype
 
 The physical prototype integrates sensing, processing, and communication modules into a compact smart stick suitable for real-world usage.
 
 ![BlindAssist Hardware Prototype](hardware/stick.jpg)
 
-🔌 Circuit Design & Module Connections
+🔌 Circuit Design
 
 The circuit diagram shows the interconnection between the Raspberry Pi, ultrasonic sensors, camera module, GPS, GSM module, and power supply.
 
@@ -53,80 +53,80 @@ The circuit diagram shows the interconnection between the Raspberry Pi, ultrason
 
 🧩 Hardware Components
 
-Raspberry Pi 4 Model B – Central processing and control unit
+Raspberry Pi 4 Model B – Central processing unit
 
 Ultrasonic Sensors (HC-SR04) – Obstacle detection
 
-Raspberry Pi Camera Module v2 – Image capture for object recognition
+Raspberry Pi Camera Module v2 – Image capture
 
-GPS Neo-6M Module – Real-time location tracking
+GPS Neo-6M Module – Location tracking
 
-GSM SIM900A Module – Emergency alert communication
+GSM SIM900A Module – Emergency alerts
 
-Li-Po Battery & LM7805 Voltage Regulator – Stable power supply
+Li-Po Battery & LM7805 Regulator – Power management
 
-Push Buttons – Emergency triggering and user interaction
+Push Buttons – Emergency and system control
 
 💻 Software Tools & Libraries
 
 Python – Primary programming language
 
-RPi.GPIO – GPIO pin interfacing
+RPi.GPIO – GPIO interfacing
 
 OpenCV – Image processing and object recognition
 
-TensorFlow Lite – Lightweight ML inference on Raspberry Pi
+TensorFlow Lite – ML inference on Raspberry Pi
 
-Picamera2 – Camera interface for image capture
+Picamera2 – Camera interface
 
 pyttsx3 – Text-to-speech conversion
 
-pySerial – Communication with GPS and GSM modules
+pySerial – GPS and GSM communication
 
 ⚙️ System Evaluation & Results
 
-The solution was rigorously tested to evaluate its effectiveness across core functionalities.
+The system was rigorously evaluated across core functionalities.
 
-🔍 Performance Summary
+Performance Summary
 
-Obstacle Detection:
-Ultrasonic sensors achieved high accuracy with an error margin of ±1 cm, ensuring reliable real-time alerts.
+Obstacle Detection: ±1 cm error margin
 
-Object Recognition:
-The machine learning model achieved an average accuracy of 92%, enabling effective identification and avoidance of obstacles.
+Object Recognition: ~92% accuracy
 
-Navigation Assistance:
-GPS module provided accurate location tracking within a 3-meter radius, supporting dependable wayfinding.
+Navigation Assistance: GPS accuracy within 3 meters
 
-Emergency Alerts:
-GSM module successfully transmitted emergency alerts within 8 seconds, ensuring timely notification to caregivers or emergency contacts.
+Emergency Alerts: Message sent within ~8 seconds
 
-These results confirm that BlindAssist significantly enhances navigation safety and situational awareness for visually impaired users.
+These results confirm that BlindAssist enhances navigation safety and situational awareness.
 
-📁 Project Documentation
+📂 Repository Structure
+BlindAssist-ML-Object-Recognition/
+├── src/            # Core source code
+├── hardware/       # Hardware images & circuit diagrams
+├── diagrams/       # System architecture & workflow
+├── docs/           # SRS, Proposal, Final Report
+└── README.md
 
-Detailed project documents are available in the /docs directory:
+▶️ Setup & Usage (Optional)
+git clone https://github.com/your-username/BlindAssist-ML-Object-Recognition.git
+cd BlindAssist-ML-Object-Recognition
 
-📄 Software Requirements Specification (SRS)
 
-📄 Project Proposal
-
-📄 Final Project Report
-
-📄 Complete Technical Documentation
+Note: This is a hardware-integrated system.
+Full functionality requires physical components (camera, sensors, GPS, GSM).
 
 🚀 Future Enhancements
 
-Integration of advanced deep learning models for improved object classification
+Advanced deep learning models for object recognition
 
-Mobile application for caregiver monitoring
+Mobile app for caregiver monitoring
 
-Cloud-based location tracking and analytics
+Cloud-based tracking and analytics
 
 Hardware miniaturization and power optimization
 
-Multilingual speech feedback support
+Multilingual speech feedback
 
 🤝 Conclusion
 
-BlindAssist demonstrates the effective application of machine learning, embedded systems, and assistive technology to solve a real-world accessibility problem. The project highlights how intelligent systems can improve independence, safety, and quality of life for visually impaired individuals.
+BlindAssist demonstrates how machine learning, embedded systems, and assistive technology can be combined to address real-world accessibility challenges and improve quality of life for visually impaired individuals.
