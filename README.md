@@ -104,6 +104,5 @@ These results confirm that **BlindAssist enhances navigation safety and situatio
 BlindAssist-ML-Object-Recognition/
 ├── src/            # Core source code
 ├── hardware/       # Hardware images & circuit diagrams
-├── diagrams/       # System architecture & workflow
 ├── docs/           # SRS, Proposal, Final Report
 └── README.md
